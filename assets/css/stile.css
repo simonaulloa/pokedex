@@ -14,57 +14,29 @@ Rojo : #e84848
 *{
 	margin: 0 auto;
 	padding: 0;
+
 }
 
 .titulo{
+	margin:20px;
 	color:#e84848;
 	text-align: center;
 }
 
 
-/*Modal*/
-#box-work-modal{ /* fondo del modal cuadro donde va la imagen*/
-  background-color: rgba(240,30,80,0.85);
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
+.pokedex{
+	border-top: 4px solid #36a4d3;
+	background-color:  #edecec;
+	text-align: center;
 }
-#box-work-modal .modal-body{   /*ajustes de la imagen dentro del modal*/
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  text-align: center;
-  padding: 100px;
-
-  /*position: fixed;*/
+img{
+	height: 150px;
+	width: 150px;
+	background-color: #dbdbdb;
+	margin-right: 100px;
+	text-align: center;
+	margin-bottom: 40px;
 }
-
-#box-work-modal .modal-body h5{ /*tamaño y color letra h5*/
-  font-size: 2em;
-  color: whitesmoke;
-}
-#box-work-modal .modal-body h6{/* tamaño y color letra h6*/
-  font-size: 1em;
-  color: whitesmoke;
-}
-
-#box-work-modal .close{ /*tamaño close? y de puntero a mano*/
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  cursor: pointer;
-}
-
-#box-work-modal .close img{ /*tamaño x close*/
-  width: 60px;
-  border: none;
-}
-#box-work-modal img{ /*tamaño imagen dentro del modal.. si!*/
-  width: 600px;
-  border: whitesmoke 20px solid;
-}
-.hide{ /* ocultar??*/
-  display: none;
+.pokemon{
+	text-align: center;
 }

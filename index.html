@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/stile.css">
 </head>
 <body>
-<section class="primera-seccion">
+<section id="primera-seccion">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-xs-12">
@@ -20,13 +20,13 @@
 		</div>
 	</div>
 </section>
-<section class="segunda-seccion">
+<section id="segunda-seccion">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-8 col-md-8 col-xs-12">
-				<div class="nav">
-					<span class="glyphicon glyphicon-search"></span>
-					<input type="" name="">
+				<div class="input-field col-lg-6 col-md-2 col-xs-6">				
+					<input class="input1"/>
+					<label><span class="glyphicon glyphicon-search"></span></label>
 				</div>
 			</div>
 			<div class="col-lg-2 col-md-2 col-xs-12">
@@ -37,13 +37,18 @@
 		</div>
 	</div>
 </section>
-<section class="tercera-seccion">
-    <div class='pokemon'></div>
-    <div class='pokedex'>
+<section id="tercera-seccion">
+    <div class='pokemon col-lg-12 col-md-12 col-xs-12'></div>
+    <div class='pokedex col-lg-12 col-md-12 col-xs-12'>
         <h1>Pokedex</h1>
         <p class='instructions'></p>
     </div>
 </section>
+
+	<!--scripts modal -->
+	<script src="jquery.js"></script>
+	<script src="bootstrap-modal.js"></script>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
