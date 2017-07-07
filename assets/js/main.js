@@ -58,3 +58,34 @@ $(document).ready(function() {
         }, 'json');
     });
 });
+
+
+/*
+ * Archivo principal de funcionalidad de JS para modal 
+	veamos si funciona U-U
+*/
+
+(function main(){
+	var boxes = Array.from(document.getElementsByClassName("box-work"));
+	var modal = document.getElementById("box-work-modal");
+	var bodyModal, close, img;
+	boxes.forEach(function(box){
+		box.addEventListener("click", function(){
+			modal.innerHTML = "";
+			bodyModal = document.createElement("div");
+			bodyModal.classList.add("modal-body");
+			bodyModal.innerHTML = box.innerHTML;			
+			modal.appendChild(bodyModal);
+			modal.classList.remove("hide");
+			close = document.createElement("div");
+			close.classList.add("close");
+			img = document.createElement("img");
+			img.setAttribute("src", "http://pokeapi.co/api/v1/pokemon/");
+			close.appendChild(img);
+			modal.appendChild(close);
+			close.addEventListener("click",function(){
+				modal.classList.add("hide");
+			});
+		});		
+	});
+})();
