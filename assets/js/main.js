@@ -1,5 +1,5 @@
 $(document).ready(function($) {
-	$$.ajax({
+	$.ajax({
 		url: 'http:/pokeapi.co/api/v2/pokemonn/',
 		type: 'GET',
 		dataType: 'json',
