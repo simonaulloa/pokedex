@@ -1,22 +1,4 @@
-$(document).ready(function($) {
-	$.ajax({
-		url: 'http:/pokeapi.co/api/v2/pokemonn/',
-		type: 'GET',
-		dataType: 'json',
-		data: {"limit": '811'},
-	})
-	.done(function(respuesta) {
-		console.log("respuesta");
-		console.log("success");
-	})
-	.fail(function() {
-		console.log("error");
-	})
-	.always(function() {
-		console.log("complete");
-	});
-	
-});
+
 /*llama a las imagenes*/
 $(document).ready(function() {
 
@@ -59,3 +41,33 @@ $(document).ready(function() {
     });
 });
 
+/* codigo jqueri modal
+
+$(document).ready(function(){
+    $(".poke").click(function(){
+        $("#myModal").modal();
+    });
+});
+*/
+
+/* lo hizo la blanca
+
+$(document).ready(function($) {
+	$.ajax({
+		url: 'http:/pokeapi.co/api/v2/pokemonn/',
+		type: 'GET',
+		dataType: 'json',
+		data: {"limit": '811'},
+	})
+	.done(function(respuesta) {
+		console.log("respuesta");
+		console.log("success");
+	})
+	.fail(function() {
+		console.log("error");
+	})
+	.always(function() {
+		console.log("complete");
+	});
+	
+});*/
